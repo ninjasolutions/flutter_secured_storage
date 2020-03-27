@@ -1,3 +1,7 @@
+## [1.0.1]
+
+* Android build fix.
+
 ## [1.0.0]
 
 * Initial release
