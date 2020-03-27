@@ -1,4 +1,4 @@
-# flutter_secure_storage
+# flutter_secured_storage
 
 A Flutter plugin to store data in secure storage:
 * [Keychain](https://developer.apple.com/library/content/documentation/Security/Conceptual/keychainServConcepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000897-CH203-TP1) is used for iOS 
@@ -11,7 +11,7 @@ A Flutter plugin to store data in secure storage:
 
 ```yaml
 dependencies:
-  flutter_secured_storage: ^1.0.0
+  flutter_secured_storage: ^1.0.2
 ```
 
 ## Getting Started
@@ -20,7 +20,7 @@ dependencies:
 import 'package:flutter_secured_storage/flutter_secured_storage.dart';
 
 // Create storage
-final storage = new FlutterSecureStorage();
+final storage = new FlutterSecuredStorage();
 
 // Read value 
 String value = await storage.read(key: key);
@@ -56,7 +56,7 @@ android {
 *Note* By default Android backups data on Google Drive. It can cause exception java.security.InvalidKeyException:Failed to unwrap key. 
 You need to 
 * [disable autobackup](https://developer.android.com/guide/topics/data/autobackup#EnablingAutoBackup), [details](https://github.com/mogol/flutter_secure_storage/issues/13#issuecomment-421083742)
-* [exclude sharedprefs](https://developer.android.com/guide/topics/data/autobackup#IncludingFiles) `FlutterSecureStorage` used by the plugin, [details](https://github.com/mogol/flutter_secure_storage/issues/43#issuecomment-471642126)
+* [exclude sharedprefs](https://developer.android.com/guide/topics/data/autobackup#IncludingFiles) `FlutterSecuredStorage` used by the plugin, [details](https://github.com/mogol/flutter_secure_storage/issues/43#issuecomment-471642126)
 
 ## Integration Tests
 

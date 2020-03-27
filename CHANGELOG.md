@@ -1,3 +1,7 @@
+## [1.0.2]
+
+* Change iOS method channel name.
+
 ## [1.0.1]
 
 * Android build fix.

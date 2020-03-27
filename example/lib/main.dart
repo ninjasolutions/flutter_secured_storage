@@ -17,7 +17,7 @@ enum _Actions { deleteAll }
 enum _ItemActions { delete, edit }
 
 class _ItemsWidgetState extends State<ItemsWidget> {
-  final _storage = FlutterSecureStorage();
+  final _storage = FlutterSecuredStorage();
 
   List<_SecItem> _items = [];
 

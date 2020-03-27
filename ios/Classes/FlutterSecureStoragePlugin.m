@@ -1,7 +1,7 @@
 #import "FlutterSecureStoragePlugin.h"
 
 static NSString *const KEYCHAIN_SERVICE = @"flutter_secure_storage_service";
-static NSString *const CHANNEL_NAME = @"plugins.indoor.solutions/flutter_secure_storage";
+static NSString *const CHANNEL_NAME = @"plugins.indoor.solutions/flutter_secured_storage";
 
 static NSString *const InvalidParameters = @"Invalid parameter's type";
 

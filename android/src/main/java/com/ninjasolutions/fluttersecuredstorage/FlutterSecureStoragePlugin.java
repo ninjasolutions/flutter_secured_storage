@@ -31,7 +31,7 @@ public class FlutterSecureStoragePlugin implements MethodCallHandler {
     public static void registerWith(Registrar registrar) {
         try {
             FlutterSecureStoragePlugin plugin = new FlutterSecureStoragePlugin(registrar.context());
-            final MethodChannel channel = new MethodChannel(registrar.messenger(), "plugins.indoor.solutions/flutter_secure_storage");
+            final MethodChannel channel = new MethodChannel(registrar.messenger(), "plugins.indoor.solutions/flutter_secured_storage");
             channel.setMethodCallHandler(plugin);
         } catch (Exception e) {
             Log.e("FlutterSecureStoragePl", "Registration failed", e);
