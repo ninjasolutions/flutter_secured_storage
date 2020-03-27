@@ -1,22 +1,22 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_secure_storage (3.3.1):
+  - flutter_secured_storage (1.0.2):
     - Flutter
 
 DEPENDENCIES:
-  - Flutter (from `/Users/german/Projects/github/flutter/bin/cache/artifacts/engine/ios`)
-  - flutter_secure_storage (from `/Users/german/Projects/nomads/flutter_secure_storage/ios`)
+  - Flutter (from `.symlinks/flutter/ios`)
+  - flutter_secured_storage (from `.symlinks/plugins/flutter_secured_storage/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
-    :path: "/Users/german/Projects/github/flutter/bin/cache/artifacts/engine/ios"
-  flutter_secure_storage:
-    :path: "/Users/german/Projects/nomads/flutter_secure_storage/ios"
+    :path: ".symlinks/flutter/ios"
+  flutter_secured_storage:
+    :path: ".symlinks/plugins/flutter_secured_storage/ios"
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_secure_storage: 7953c38a04c3fdbb00571bcd87d8e3b5ceb9daec
+  flutter_secured_storage: 94175594060db170ae699b8ec08c544f93d2b0e9
 
-PODFILE CHECKSUM: 351e02e34b831289961ec3558a535cbd2c4965d2
+PODFILE CHECKSUM: d231b65d6bea6d24555f84ca7901720538b5791f
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.1

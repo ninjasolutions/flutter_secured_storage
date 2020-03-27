@@ -111,8 +111,6 @@ static NSString *const InvalidParameters = @"Invalid parameter's type";
             (__bridge id)kSecAttrAccessible: (__bridge id) attrAccessible,
         };
         
-        NSDictionary *update = @{(__bridge id)kSecValueData: [value dataUsingEncoding:NSUTF8StringEncoding]};
-        
         status = SecItemUpdate((__bridge CFDictionaryRef)search, (__bridge CFDictionaryRef)update);
         if (status != noErr){
             NSLog(@"SecItemUpdate status = %d", (int) status);
