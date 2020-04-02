@@ -3,7 +3,6 @@ import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:meta/meta.dart';
-import 'package:flutter/foundation.dart';
 
 class FlutterSecuredStorage {
   const FlutterSecuredStorage();
@@ -139,7 +138,7 @@ class IOSOptions extends Options {
     }
 
     if (_accessibility != null) {
-      m['accessibility'] = describeEnum(_accessibility);
+      m['accessibility'] = _describeEnum(_accessibility);
     }
 
     return m;
@@ -151,4 +150,11 @@ class AndroidOptions extends Options {
   Map<String, String> _toMap() {
     return <String, String>{};
   }
+}
+
+String _describeEnum(Object enumEntry) {
+  final String description = enumEntry.toString();
+  final int indexOfDot = description.indexOf('.');
+  assert(indexOfDot != -1 && indexOfDot < description.length - 1);
+  return description.substring(indexOfDot + 1);
 }

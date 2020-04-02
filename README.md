@@ -11,7 +11,7 @@ A Flutter plugin to store data in secure storage:
 
 ```yaml
 dependencies:
-  flutter_secured_storage: ^1.0.2
+  flutter_secured_storage: ^1.0.4
 ```
 
 ## Getting Started

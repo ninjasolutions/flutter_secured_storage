@@ -1,3 +1,7 @@
+## [1.0.4]
+
+* Remove integration test breaking feature.
+
 ## [1.0.3]
 
 * Fix iOS release.
